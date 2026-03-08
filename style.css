@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Shared Codes */
+body{
+     font-family: "Poppins", sans-serif;
+}
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+img{
+    width: 100%;
+    display: block;
+}
+.description{
+    color: #4E4E4E;
+}
+.btn{
+    text-transform: uppercase;
+    padding: 15px 20px;
+border: none;    
+ font-weight: bold;
+ border-radius: 8px;
+ cursor: pointer;
+}
+.primary-btn{
+    background-image: linear-gradient(#FF589B, #FF136F);
+    color: #fff;
+   
+
+}
+.title{
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Random Codes */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+.logo{
+    max-width: 148px;
+    cursor: pointer;
+}
+.menu{
+    width: 50px;
+    cursor: pointer;
+}
+
+
+/* Banner Area */
+.banner-area{
+    display: flex;
+    background-color: #FEEAE9;
+    padding: 40px 40px;
+    border-radius: 24px;
+    justify-content: center;
+    align-items: center;
+}
+.banner-info{
+   width: 50%;
+}
+
+.banner-title{
+    font-size: 3em;
+    margin-bottom: 12px;
+}
+.price{
+    color: #FF136F;
+    font-size: 2.5em;
+    font-width: 600;
+    margin: 16px 0;
+}
+/* Category Card */
+.categories-area{
+    margin: 50px auto
+}
+.cards-container{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    
+}
+.category-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 350px;
+    padding: 15px 30px;
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+    height: 120px;
+}
+.category-card img{
+    width: 70px;
+}
+.yellow{
+    background-color: #FF9C35;
+}
+.pink{
+    background-color: #FF136F;
+}
+.blue{
+    background-color: #3F07F8;
+}
+/* Products */
+.products-area{
+    margin: 50px auto;
+}
+.products-card{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+    
+   
+}
+.single-card{
+    border: 1px solid gray;
+    padding: 25px 10px;
+    border-radius: 12px;
+    width: 320px;
+}
+.products-card img{
+    width: 280px;
+    height: 200px;
+}
+.card-title{
+    margin-top: 16px;
+}
+.card-price{
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+.single-card .description{
+    margin: 16px 0;
+}
+.single-card .btn{
+    background-color: #000;
+    color: #fff;
+}
+.footer{
+    padding: 140px 0;
+    background-color: #FFF2F1;
+    text-align: center;
+}
+.footer h2{
+    font-size: 2em;
+}
+.footer .description{
+    margin-bottom: 16px;
+}
+input[type="email"]{
+    padding: 16px;
+    width: 250px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+.footer .input-button{
+    padding: 16px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 8px 8px 0; 
+}
+/* Mobile Device Responsive */
+@media screen and (min-width:320px) and (max-width: 640px) {
+    .banner-area, .categories-area, .products-area{
+        text-align: center;
+    }
+    .banner-area{
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+    .banner-info{
+        width: 100%;
+    }
+    .cards-container{
+        flex-direction: column;
+    }
+    .category-card{
+        width: auto;
+    }
+    .products-card{
+    flex-direction: column;
+    
+
+}
+.single-card{
+    width: auto;
+}
+.single-card img{
+    margin: auto;
+}
+input{
+    display: block;
+    margin: auto
+}
+.footer .input-button{
+    border-radius: 8px;
+    width: 20%;
+    margin-top: 16px;
+}
+}
+@media screen and (min-width: 640px) and (max-width: 992px){
+
+    .banner-area{
+        width: 100%;
+    }
+     .products-card{
+    flex-wrap: wrap;
+}
+ .cards-container{
+        flex-wrap: wrap;
+    }
+    .category-card{
+        /* width: 100%; */
+    }
+    .single-card{
+        /* width: 100%; */
+    }
+}
